@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<ApplicationIcon />
+		<StartupObject />
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!--Need to do this for resolving WPF errors
+		https://github.com/dotnet/wpf/issues/2341#issuecomment-567723885 -->
+		<FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+	</ItemGroup>
+
+</Project>
